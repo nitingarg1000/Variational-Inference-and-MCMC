@@ -2,15 +2,6 @@ library(DirichletReg)
 library(matrixStats)
 # library(matlib)
 
-# Put both the codes in the same file i.e. VI and MCMC. After each method print the means of the posteriors. 95 % quantile, what are the two marks on the x-axis such that the probability is 
-# abline(v = quantile(samp, probs = c(0.025, 0.975)), col = "red") find different points on the x-axis for both the algorithms 
-# look up for the label switching problem
-# Run the code for 1e6-1e7 iterations 
-# replace it with apply(), read about it
-# Optimize the thing that calculates Nk and Xk by using (z==b) [this return a vector of the same length with values true/false] and we can multiply that vector to make any changes to the entire vector
-# label.switching package and a pivmet package are available to fix the label switching that is being faced when we run the code for a large number of iterations
-# profvis package in R tells us what line of code is taking the most time
-
 set.seed(1)
 MCMC<- function(x, K, lambda){
 	n <- length(x)
