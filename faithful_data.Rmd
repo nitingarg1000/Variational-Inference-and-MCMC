@@ -1,0 +1,11 @@
+
+```{r}
+ data(faithful)
+ ?faithful
+
+ x1 <- faithful$eruptions
+ x2 <- faithful$waiting
+
+ plot(density(x1))
+ plot(density(x2))
+ ```
